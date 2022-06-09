@@ -1,12 +1,11 @@
 .box{
     display: grid;
-    text-decoration: box;
     width: 100%;
     height: 130px;
     background: teal;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     z-index: -1;
     margin-top: 30px;
 }
@@ -14,10 +13,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: lightgrey;
+    display: grid;
+    justify-items: center;
 }
 /* What kind of selector is this? */
 .logo {
@@ -25,9 +22,13 @@ body {
     height: 130px;
     margin: 10% 20%;
 }
-
+head {
+    display: grid;
+    justify-items: center;
+}
 header {
     display: grid;
+
     grid-template-columns: 40% 60%;
     width: 100%;
 }
@@ -51,6 +52,8 @@ nav > a {
     padding-bottom: 2px;
     text-align: center;
     border: 2px solid white;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -65,58 +68,81 @@ nav > a {
     font-size: 15px;
     justify-content: center;
     align-content: space-evenly;
+    align-items: center;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-content: center;
     width: 100%;
     padding-right: 2%;
+}
 
-}
-/* This is an ID selector */
-#profile-pic {
-    width: 500px;
+section {
+    background: white;
+    border: 2px solid teal;
+    border-radius: 4px;
+    margin: 50px auto 28px;
+    overflow: hidden;
+    padding: 0;
+    width: 936px;
     height: 500px;
-    border-radius: 50%;
-    margin: 15% auto;
-    grid-column: 2/3;
+    display: block;
 }
+
+article {
+    display: block;
+    float: left;
+    margin: 0 50px 0 0;
+    padding: 0;
+}
+
 
 h1 {
-    color:Black;
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid Black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: slategrey;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 50px;
+    padding: 110px 30px 30px;
+}
+
+.styles img {
+    width: 225px;
+    height: 175px;
+    border: 3px teal solid;
+    padding: 2px
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
 
 }
 
-h2 {
-    grid-column: 2/3;
-    font-style: italic;
-    color: Black;
-
+li {
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 220px;
 }
 
-.small-text {
-    grid-column: 2/3;
-    color: black;
-    font-size: 10px;
-    margin: 3% auto;
+
+@media screen and (max-width: 576px) {
 }
 
-button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 95%;
-    height: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: transparent;
-    padding: 20px;
-    padding-bottom: 5%;
-    text-align: center;
-    color: black;
-    letter-spacing: 14px;
-    font-style: italic;
+@media screen and (min-width: 992px) {
+}
