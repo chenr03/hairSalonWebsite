@@ -77,25 +77,28 @@ nav {
     align-content: center;
     width: 100%;
     padding-right: 2%;
+
 }
 
 section {
     background: white;
-    border: 2px solid teal;
+    border: 5px solid teal;
     border-radius: 4px;
     margin: 50px auto 28px;
     overflow: hidden;
     padding: 0;
-    width: 936px;
-    height: 500px;
+    width: 1000px;
+    height: 400px;
     display: block;
 }
 
 article {
     display: block;
     float: left;
-    margin: 0 50px 0 0;
+    margin: 0 50px 0 0px;
     padding: 0;
+    width: 400px;
+    background: hidden;
 }
 
 
@@ -114,8 +117,12 @@ h1 {
 .styles img {
     width: 225px;
     height: 175px;
-    border: 3px teal solid;
-    padding: 2px
+    border: 5px teal solid;
+    padding: 0;
+    margin: 5px;
+    align-items: center;
+    float: left;
+
 }
 
 ul {
@@ -125,20 +132,45 @@ ul {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 0;
     margin: 0;
     overflow: hidden;
-    padding: 0;
-
 }
 
 li {
+    display: block;
+    list-style-type: line;
     float: left;
-    list-style: none;
-    margin: 0 10px;
-    padding: 0;
+    margin: 10px 10px;
+    padding: 12px;
     width: 220px;
+    border-radius: 25%;
 }
+
+.featured {
+    display: grid;
+    background: #fff;
+    border: 5px solid #5fb3bd;
+    border-radius: 4px;
+    min-height: 250px;
+    padding: 45px 15px 15px;
+    position: relative;
+    width: 420px;
+    overflow: hidden;
+    float: left;
+}
+ div img {
+    display:grid;
+    background: white;
+    float: left;
+    overflow: hidden;
+    padding-right: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
 
 
 @media screen and (max-width: 576px) {
